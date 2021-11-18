@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
   
   body{
     width: 100%;
+    background: $bg;
   }
   
   #root{
@@ -13,4 +16,5 @@
   }
   
   .App{
+    background: $bg;
   }

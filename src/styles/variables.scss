@@ -9,19 +9,36 @@ $light: #32f5c8;
 $icon-color: #00acee;
 
 
-//breakpoints
 
-@mixin breakpoint($point) {
+//breakpoint
+@mixin breakpoint ($point){
     @if $point == md {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1224px) {
+            @content;
+            }
+        }
+    }
+
+
+@mixin breakpoint2($point) {
+    @if $point == smd {
+        @media screen and (max-width: 868px) {
             @content;
         }
     }
 }
 
-@mixin breakpoint($point) {
+@mixin breakpoint3($point) {
     @if $point == smd {
         @media screen and (max-width: 568px) {
+            @content;
+        }
+    }
+}
+
+@mixin breakpoint4($point) {
+    @if $point == smd {
+        @media screen and (max-width: 380px) {
             @content;
         }
     }
