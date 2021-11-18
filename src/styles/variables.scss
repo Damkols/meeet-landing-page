@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+
+$poppins: 'Poppins', sans-serif;
+
+//colors
+$bg: #013243;
+$light: #32f5c8;
+$icon-color: #00acee;
+
+
+//breakpoints
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == smd {
+        @media screen and (max-width: 568px) {
+            @content;
+        }
+    }
+}
